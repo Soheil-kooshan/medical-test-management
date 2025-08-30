@@ -1,6 +1,7 @@
 package com.soheil.test_management.services;
 
 import com.soheil.test_management.dtos.request.TestRequestDTO;
+import com.soheil.test_management.dtos.response.TestResponseDTO;
 import com.soheil.test_management.entities.Test;
 import com.soheil.test_management.repositories.TestRepo;
 import lombok.Data;
@@ -14,7 +15,7 @@ public class TestService {
 
     private final TestRepo testRepo;
 
-    public List<Test> getAllTests(){
+    public List<TestResponseDTO> getAllTests(){
 
     }
 
