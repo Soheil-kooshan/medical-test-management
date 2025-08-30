@@ -6,14 +6,19 @@ import com.soheil.test_management.entities.Test;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 
+import java.util.List;
+
 @Mapper(componentModel = "spring")
 public interface TestMapper {
     @Mapping(source = "testTemplate.id", target = "testTemplateId")
     @Mapping(source = "testTemplate.name", target = "testTemplateName")
-    TestResponseDTO toDTO(Test test);
+    TestResponseDTO toResponseDto(Test test);
 
     @Mapping(source = "patientId", target = "patient.id")
     @Mapping(source = "testTemplateId", target = "testTemplate.id")
     Test toEntity(TestRequestDTO DTO);
+
+    List<Test> toEntityList(List<TestRequestDTO> DTO);
+    List<TestResponseDTO> toResponseDtoList(List<Test> test);
 
 }

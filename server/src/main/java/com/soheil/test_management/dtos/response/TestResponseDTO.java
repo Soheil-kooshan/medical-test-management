@@ -5,7 +5,7 @@ import java.time.LocalDate;
 
 public class TestResponseDTO {
     private long id;
-    private long testTemplateId
+    private long testTemplateId;
     private String testTemplateName;
     private String status;
     private LocalDate scanDate;
