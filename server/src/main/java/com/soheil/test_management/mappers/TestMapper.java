@@ -18,7 +18,7 @@ public interface TestMapper {
     @Mapping(source = "testTemplateId", target = "testTemplate.id")
     Test toEntity(TestRequestDTO DTO);
 
-    List<Test> toEntityList(List<TestRequestDTO> DTO);
-    List<TestResponseDTO> toResponseDtoList(List<Test> test);
+    List<Test> toEntityList(List<TestRequestDTO> DTOs);
+    List<TestResponseDTO> toResponseDtoList(List<Test> tests);
 
 }
