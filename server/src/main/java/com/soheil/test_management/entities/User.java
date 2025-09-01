@@ -1,13 +1,12 @@
 package com.soheil.test_management.entities;
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Id;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
 import java.time.Instant;
+import java.util.HashSet;
+import java.util.Set;
 
 @Getter
 @Setter
@@ -42,4 +41,6 @@ public class User {
     @Column(name = "created_at", nullable = false)
     private Instant createdAt;
 
+    @ManyToMany(mappedBy = "roles")
+    private Set<Role> roles = new HashSet<>();
 }
