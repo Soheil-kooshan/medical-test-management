@@ -34,8 +34,8 @@ public class Appointment {
     @Column(name = "note")
     private String note;
 
-    @Column(name = "uploaded_at", nullable = false)
-    private Instant uploadedAt;
+    @Column(name = "updated_at", nullable = false)
+    private Instant updatedAt;
 
     @Column(name = "created_at", nullable = false)
     private Instant createdAt;
