@@ -1,12 +1,8 @@
 package com.soheil.test_management.mappers;
 
-import com.soheil.test_management.dtos.request.TestParameterRequestDTO;
 import com.soheil.test_management.dtos.request.TestRequestDTO;
 import com.soheil.test_management.dtos.request.TestTemplateRequestDTO;
-import com.soheil.test_management.dtos.response.TestParameterResponseDTO;
-import com.soheil.test_management.dtos.response.TestResponseDTO;
 import com.soheil.test_management.dtos.response.TestTemplateResponseDTO;
-import com.soheil.test_management.entities.TestParameter;
 import com.soheil.test_management.entities.TestTemplate;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;

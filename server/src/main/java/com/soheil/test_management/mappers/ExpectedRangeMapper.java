@@ -4,7 +4,6 @@ import com.soheil.test_management.dtos.request.ExpectedRangeRequestDTO;
 import com.soheil.test_management.dtos.response.ExpectedRangeResponseDTO;
 import com.soheil.test_management.entities.ExpectedRange;
 import org.mapstruct.Mapper;
-import org.mapstruct.Mapping;
 
 import java.util.List;
 

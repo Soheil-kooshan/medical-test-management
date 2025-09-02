@@ -1,8 +1,6 @@
 package com.soheil.test_management.mappers;
 
-import com.soheil.test_management.dtos.request.PatientRequestDTO;
 import com.soheil.test_management.dtos.request.TestFileRequestDTO;
-import com.soheil.test_management.dtos.response.ReportResponseDTO;
 import com.soheil.test_management.dtos.response.TestFileResponseDTO;
 import com.soheil.test_management.dtos.response.TestResponseDTO;
 import com.soheil.test_management.entities.Report;

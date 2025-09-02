@@ -1,6 +1,5 @@
 package com.soheil.test_management.mappers;
 
-import com.soheil.test_management.dtos.request.PatientRequestDTO;
 import com.soheil.test_management.dtos.request.PermissionRequestDTO;
 import com.soheil.test_management.dtos.response.PermissionResponseDTO;
 import com.soheil.test_management.entities.Permission;
